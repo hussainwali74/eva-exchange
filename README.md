@@ -40,6 +40,7 @@ npm run seed:run
 ```
 
 ## db design 
+
 please find db design in the root folder
 --
 ## Asumptions:
