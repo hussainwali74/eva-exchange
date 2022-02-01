@@ -1,0 +1,41 @@
+
+Share
+    - price - 2 decimal digits #latest price
+    - symbol - 3characters- all caps
+    - registered - bool
+
+User
+    - portfolio?
+
+#portfolio: record of how many shares each user has 
+User_Share
+    - user_id
+    - share_id
+    - amount
+    - price
+
+#record of confirmed trade 
+trade
+    - seller_id
+    - buyer_id
+    - share_id
+    - price
+
+-------------------------------controller
+Share
+- register
+- buy
+    - should be latest price 
+    - if share not registered throw bad request error
+    - user should be registered
+- sell
+    - should be in User_Share
+    - if user not registered throw bad request error
+    - should be at latest price
+    - check from User_Share if user has sufficient shares to sell
+- update
+    - update price 
+
+
+User 
+- 
